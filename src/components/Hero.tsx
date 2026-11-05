@@ -1,17 +1,19 @@
-import { CalendarCheck, Phone } from "lucide-react";
+import { CalendarCheck, Phone, User } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { profile, stats } from "@/data/content";
-import heroImg from "@/assets/mishu.png";
+import { images, profile, stats } from "@/data/content";
+import ImageSlot from "./ImageSlot";
 
 export default function Hero() {
   return (
     <section id="home" className="relative flex flex-col overflow-hidden md:block bg-gradient-to-br from-[#f1e4d8] via-[#eddccd] to-[#e6d3c2]">
       {/* Photo: below the text on phones, right half on md+ */}
       <div className="relative order-2 flex md:order-none h-[22rem] items-end justify-center sm:h-[26rem] md:absolute md:inset-y-0 md:right-0 md:h-auto md:w-1/2">
-        <img
-          src={heroImg}
-          alt={`Portrait of ${profile.name}`}
-          className="h-full w-full object-contain object-bottom mix-blend-multiply md:object-cover md:object-top"
+          <ImageSlot
+           src={images.hero}
+          alt="M B H Mishu"
+          icon={User}
+          hint="Add your photo in src/assets"
+          className="h-full w-full object-top "
         />
         <div className="pointer-events-none absolute inset-x-0 top-0 h-16 bg-gradient-to-b from-[#e9d8c8] to-transparent md:hidden" />
         <div className="pointer-events-none absolute inset-0 hidden bg-gradient-to-r from-[#eddccd] via-transparent to-transparent md:block" />

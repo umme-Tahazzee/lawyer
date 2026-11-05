@@ -2,6 +2,7 @@ import { ArrowRight, Gavel } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { aboutFacts, images, profile } from "@/data/content";
 import ImageSlot from "./ImageSlot";
+import heroImg from "@/assets/mishu.png";
 
 export default function About() {
   return (

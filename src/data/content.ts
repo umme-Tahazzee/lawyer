@@ -2,6 +2,9 @@ import {
   Award, Building2, Gavel, GraduationCap, IdCard, Landmark, Layers, FileText, Scale, ShieldCheck, Users, UsersRound,
 } from "lucide-react";
 
+import heroImg from "@/assets/mishu.png";
+
+
 export const profile = {
   name: "Md. Arif Hossain",
   shortName: "Arif Hossain",
@@ -17,8 +20,8 @@ export const profile = {
 
 // Put your photos in /public/images and change the file names here.
 export const images = {
-  hero: "/images/advocate.jpg",
-  about: "/images/gavel.jpg",
+  hero: heroImg,
+  about: heroImg,
 };
 
 export const navLinks = [
