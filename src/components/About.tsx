@@ -7,13 +7,13 @@ import heroImg from "@/assets/mishu.png";
 export default function About() {
   return (
     <section id="about" className="container py-10">
-      <div className="soft-card grid gap-8 p-6 md:grid-cols-[210px_1fr_1fr] md:p-8">
+      <div className="  soft-card grid gap-8 p-6 md:grid-cols-[210px_1fr_1fr] md:p-8">
         <ImageSlot
           src={images.about}
           alt="Judge's gavel"
           icon={Gavel}
           hint="Optional: public/images/gavel.jpg"
-          className="h-56 w-full rounded-xl shadow-soft-sm md:h-full"
+          className="hidden md:block h-56 w-full rounded-xl shadow-soft-sm md:h-full"
         />
         <div className="flex flex-col justify-center md:pr-6 md:[border-right:1px_solid_hsl(var(--border))]">
           <h2 className="text-3xl font-bold">About Me</h2>

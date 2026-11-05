@@ -3,6 +3,7 @@ import {
 } from "lucide-react";
 
 import heroImg from "@/assets/mishu.png";
+import avatar from '@/assets/avatar.png'
 
 
 export const profile = {
@@ -20,7 +21,7 @@ export const profile = {
 
 // Put your photos in /public/images and change the file names here.
 export const images = {
-  hero: heroImg,
+  hero:  avatar,
   about: heroImg,
 };
 
