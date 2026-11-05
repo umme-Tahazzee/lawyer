@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 27 52% 94%;
+    --foreground: 215 45% 14%;
+    --card: 27 50% 93%;
+    --card-foreground: 215 45% 14%;
+    --primary: 213 52% 19%;
+    --primary-foreground: 0 0% 100%;
+    --muted: 27 30% 88%;
+    --muted-foreground: 215 15% 35%;
+    --border: 27 25% 84%;
+    --ring: 38 62% 42%;
+    --gold: 38 62% 40%;
+    --gold-light: 38 60% 52%;
+    --radius: 0.75rem;
+  }
+  * { @apply border-border; }
+  html { scroll-behavior: smooth; scroll-padding-top: 5rem; }
+  body { @apply bg-background text-foreground font-sans antialiased; }
+  h1, h2, h3 { @apply font-serif; }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+}
+
+@layer components {
+  .soft-card { @apply rounded-2xl bg-card shadow-soft; }
+  .soft-tile { @apply rounded-xl bg-card shadow-soft-sm; }
+}
